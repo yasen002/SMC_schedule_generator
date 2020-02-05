@@ -9,3 +9,6 @@ task:
 2/3/2020
 1.'build schedule button'
 2. router
+
+2/4/2020
+this file does not need a npm installed untill we need routing with express at app06.
