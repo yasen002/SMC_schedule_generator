@@ -12,3 +12,6 @@ task:
 
 2/4/2020
 this file does not need a npm installed untill we need routing with express at app06.
+
+2/5/2020
+now submit button switchs pages

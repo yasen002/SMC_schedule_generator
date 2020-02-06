@@ -1,0 +1,29 @@
+<div id="main" class="card">
+    <div class="card-content">
+      <span class="card-title">Class List</span>
+      <div>
+        <ul class="myClass collection"></ul>
+      </div>
+      <button style=" background-color: #ffb347;width:90%;display: none;" class="btn_submit btn">Submit!</button>
+    </div>
+    
+    <div class="card-action">
+      <h5  style="display:inline-block;" id="task-title">Find Class</h5>
+      <a style=" float:right;display:inline-block;" class = "btn dropdown-button" href = "#" data-activates = "dropdown">Search By
+          <i class = "mdi-navigation-arrow-drop-down right"></i></a>	
+
+      <div class="input-field col s12">
+        <input type="text" name="filter" id="filter">
+        <label class="searchLable" id="class_number"  for="filter">Search by Section Number</label>
+      </div>
+      
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 40px; font-weight:bold;"  class="row">
+        <div  >Section Number</div>
+        <div >Instructor Name</div>
+        <div >Class Name</div>
+        <div >Schedule</div> 
+        <div></div>
+      </div>
+      <ul class="classList materialize-textarea"></ul>
+    </div>
+  </div><!--Main div-->
