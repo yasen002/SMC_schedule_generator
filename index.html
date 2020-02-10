@@ -9,34 +9,52 @@
   <title>Task List</title>
 </head>
 <body>
-  
+    
+
+  <!-- materialize dropdown manue -->
+  <div class="container">
+    <ul id = "dropdown" class = "searchOption dropdown-content">
+        <li><a href = "#!" onclick="SearchChoice('class_number')" >Section Number</a></li>
+        <li class = "divider"></li>
+        <li><a href = "#!"onclick="SearchChoice('class_instructor')">Instructor Name</a></li>
+        <li class = "divider"></li>
+        <li><a href = "#!"onclick="SearchChoice('class_name')">Class Name</a></li>
+     </ul>
+    </div>
+    <!-- ------------ -->
+
   <div class="container">
     <div class="row">
-      <div class="col s12">
+      <div class="colContainer col s12">
         <div id="main" class="card">
-          <div class="card-content">
-            <span class="card-title">Task List</span>
-            <div class="row">
-              <form id="task-form">
-                <div class="input-field col s12">
-                  <input type="text" name="task" id="task">
-                  <label for="task">New Task</label>
-                </div>
-                <input type="submit" value="Add Task" class="btn">
-              </form>
+            <div class="card-content">
+              <span class="card-title">Class List</span>
+              <div>
+                <ul class="myClass collection"></ul>
+              </div>
+              <button style=" background-color: #ffb347;width:90%;display: none;" class="btn_submit btn">Create Schedule!</button>
             </div>
-          </div>
-          <div class="card-action">
-            <h5 id="task-title">Tasks</h5>
-            <div class="input-field col s12">
-              <input type="text" name="filter" id="filter">
-              <label for="filter">Filter Tasks</label>
+            
+            <div class="card-action">
+              <h5  style="display:inline-block;" id="task-title">Find Class</h5>
+              <a style=" float:right;display:inline-block;" class = "btn dropdown-button" href = "#" data-activates = "dropdown">Search By
+                  <i class = "mdi-navigation-arrow-drop-down right"></i></a>	
+
+              <div class="input-field col s12">
+                <input type="text" name="filter" id="filter">
+                <label class="searchLable" id="class_number"  for="filter">Search by Section Number</label>
+              </div>
+              
+              <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 40px; font-weight:bold;"  class="row">
+                <div  >Section Number</div>
+                <div >Instructor Name</div>
+                <div >Class Name</div>
+                <div >Schedule</div> 
+                <div></div>
+              </div>
+              <ul class="classList materialize-textarea"></ul>
             </div>
-            <ul style="width: auto; height: 200px; overflow: auto" class="collection"></ul>
-            <a href="#" class="clear-tasks btn black">Clear Tasks</a>
-           
-          </div>
-        </div>
+          </div><!--Main div-->
       </div>
     </div>
   </div>
