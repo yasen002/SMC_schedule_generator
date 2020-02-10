@@ -15,3 +15,4 @@ this file does not need a npm installed untill we need routing with express at a
 
 ////////////////////
 now submit button switchs pages
+best browser compatibility is Chrome for now.
