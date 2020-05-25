@@ -6,7 +6,7 @@
 
 import json
 from urllib.request import urlopen as uReq
-from bs4 import BeautifulSoup as soup   ##might not need this
+from bs4 import BeautifulSoup as soup   ##might not need this 
 
 smcUrl = "https://smccis.smc.edu/isisdoc/web_cat_sched_20201.html#AD-JUS-1"
 
